@@ -39,11 +39,12 @@ const Sidebar = () => {
       <aside
         className={`w-64 h-full bg-gray-800 text-white p-5 fixed top-5 left-0 transition-transform transform rounded-sm ${
           isMobile ? "translate-x-0" : "-translate-x-full transition ease-in-out duration-200"
-        } md:relative md:translate-x-0 md:block z-40`}
+        } md:relative md:translate-x-0 md:block z-40 opacity-1`}
       >
   
         <div className="flex gap-2 px-1 py-6 cursor-default">
-          <AiFillCar fontSize={30} className="text-red-500 shadow-md" />
+          {isMobile ? <AiFillCar fontSize={30} className="hidden" />  :<AiFillCar fontSize={30} className="text-yellow-500 shadow-md" /> }
+          
           <h1 className="text-2xl" style={{ textShadow: "2px 2px 1px red" }}>
             Dodo's Luxe
           </h1>
