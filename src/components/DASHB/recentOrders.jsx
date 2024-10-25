@@ -28,31 +28,31 @@ const getOrderStatus = (status) => {
   switch (status) {
     case "PLACED":
       return (
-        <span className="capitalize py-1 px-2 rounded-md text-xl text-sky-400 bg-sky-300">
+        <span className="capitalize py-1 px-2 rounded-md text-xl text-black bg-sky-300">
           {status.replaceAll("_", " ").toLowerCase()}
         </span>
       );
     case "GLACED":
       return (
-        <span className="capitalize py-1 px-2 rounded-md text-xl text-yellow-400 bg-yellow-300">
+        <span className="capitalize py-1 px-2 rounded-md text-xl text-black bg-yellow-300">
           {status.replaceAll("_", " ").toLowerCase()}
         </span>
       );
     case "PENDING":
       return (
-        <span className="capitalize py-1 px-2 rounded-md text-xl text-orange-400 bg-orange-300">
+        <span className="capitalize py-1 px-2 rounded-md text-xl text-black bg-orange-300">
           {status.replaceAll("_", " ").toLowerCase()}
         </span>
       );
     case "DORMANT":
       return (
-        <span className="capitalize py-1 px-2 rounded-md text-xl text-gray-400 bg-gray-300">
+        <span className="capitalize py-1 px-2 rounded-md text-xl text-black bg-gray-300">
           {status.replaceAll("_", " ").toLowerCase()}
         </span>
       );
     default:
       return (
-        <span className="capitalize py-1 px-2 rounded-md text-xl text-gray-500 bg-gray-200">
+        <span className="capitalize py-1 px-2 rounded-md text-xl text-black bg-gray-200">
           {status.replaceAll("_", " ").toLowerCase()}
         </span>
       );
